@@ -2,22 +2,32 @@
 
 ## Dataset Spotify (playlist_2010to2023)
 
-![Géneros](results_images/histograma_generos.png)
-![Número de Géneros](results_images/distribucion_num_generos.png)
-![Histogramas](results_images/histogramas_variables.png)
-![Boxplots](results_images/boxplots_variables.png)
-![Scatter vs Año](results_images/scatterplots_vs_year.png)
-![Matriz Scatter](results_images/matriz_scatterplots.png)
-![Outliers](results_images/deteccion_outliers.png)
-![Comparación](results_images/comparacion_antes_despues.png)
-![Correlación](results_images/matriz_correlacion.png)
+Análisis del dataset de Spotify con canciones del 2010 al 2023.
 
-## Dataset World Bank (8fa87b74)
+- **Archivo original**: `playlist_2010to2023.csv`
+- **Archivo curado**: `datasets_curados/playlist_2010to2023_curado.csv`
+- **Script de curado**: `curado_dataset.py`
 
-![Distribución General](results_images/wb_distribucion_general.png)
-![Comparación Antes/Después](results_images/wb_comparacion_antes_despues.png)
-![Outliers](results_images/wb_deteccion_outliers.png)
-![Evolución Temporal](results_images/wb_evolucion_temporal.png)
-![Heatmap Países](results_images/wb_heatmap_paises.png)
-![Ranking Países](results_images/wb_ranking_paises.png)
-![Scatterplots](results_images/wb_scatterplots.png)
+## Dataset World Bank - Tasa de Crecimiento PIB per cápita
+
+Análisis de indicadores del Banco Mundial.
+
+- **Archivos curados**: 
+  - `datasets_curados/TasaCrecimientoPIBpc_curado.csv`
+  - `datasets_curados/TasaCrecimientoPIBpc_curado_long.csv`
+- **Script de curado**: `curado_pib_percapita.py`
+
+## Estructura del Proyecto
+
+```
+.
+├── curado_dataset.py              # Script para curar dataset de Spotify
+├── curado_pib_percapita.py       # Script para curar dataset del Banco Mundial
+├── playlist_2010to2023.csv        # Dataset original de Spotify
+├── datasets_curados/              # Datasets procesados y curados
+│   ├── playlist_2010to2023_curado.csv
+│   ├── TasaCrecimientoPIBpc_curado.csv
+│   └── TasaCrecimientoPIBpc_curado_long.csv
+├── P_Popular_Indicators/          # Indicadores populares del Banco Mundial
+└── results_images/                # Imágenes de resultados y visualizaciones
+```
